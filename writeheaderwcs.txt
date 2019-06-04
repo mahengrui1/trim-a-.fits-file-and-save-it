@@ -1,0 +1,26 @@
+from astropy.io import fits
+from astropy.utils.data import get_pkg_data_filename
+import readline
+#to write (overwrite) some header info to .fits.
+#HengruiMa, 30082578, University of Calgary, 20190603
+
+print('pls input the location of file. i.e. /home/rui1/editing.fits \n')
+a=input()
+
+fits.setval(a, 'CTYPE1', value='RA---TAN          ')
+fits.setval(a, 'CTYPE2', value='DEC--TAN          ')
+fits.setval(a, 'CRPIX1', value=2690.60756)
+fits.setval(a, 'CRPIX2', value=2356.021556)
+fits.setval(a, 'CRVAL1', value=10.70144)
+fits.setval(a, 'CRVAL2', value=41.26125)
+fits.setval(a, 'CD1_1', value=-0.00011581496537)
+fits.setval(a, 'CD1_2', value=5.1704335234E-07)
+fits.setval(a, 'CD2_1', value=-5.0392980071E-07)
+fits.setval(a, 'CD2_2', value=-0.00011578450192)
+fits.setval(a, 'PSCALEX', value=0.416938030221663)
+fits.setval(a, 'PSCALEY', value=0.416828154765868)
+fits.setval(a, 'ROTX', value=0.255789094350586)
+fits.setval(a, 'ROTY', value=0.249367298422603)
+#fits.setval(a, '', value=)
+
+print('done.')
