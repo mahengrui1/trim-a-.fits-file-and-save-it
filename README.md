@@ -1,13 +1,13 @@
 # trim-a-.fits-file-and-save-it
 20190604
-怎么把.fits图像文件的一部分挖出来保存成新文件？（fits 图像剪切）
+怎么把.fits图像文件的一部分挖出来保存成新文件？（fits 图像剪切）（仅支持矩形） 
 1 可以用CCDLAB （https://www.ucalgary.ca/uvit/）。这里没有教程。
 2 可以用python3
 
 参考代码（不全）
 （Cutout2D可以保存WCS信息但我不会）
 ---
-How do I dig out a part of a .fits image file and save it as a new file? (fits image cut)
+How do I dig out a part of a .fits image file and save it as a new file? (fits image cut) (rectangle only)
 1 CCDLAB (https://www.ucalgary.ca/uvit/) can be used. There are no tutorials here.
 2 can use python3
 
